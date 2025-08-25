@@ -4,7 +4,7 @@
  */
 {
 	"$schema": "node_modules/wrangler/config-schema.json",
-	"name": "practice-scalar",
+	"name": "practice-docs",
 	"main": "./dist/_worker.js/index.js",
 	"compatibility_date": "2025-08-23",
 	"compatibility_flags": [
