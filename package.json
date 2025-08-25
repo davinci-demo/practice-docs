@@ -1,7 +1,7 @@
 {
-	"name": "practice-scalar",
+	"name": "practice-docs",
 	"type": "module",
-	"version": "0.0.1",
+	"version": "0.0.2",
 	"scripts": {
 		"dev": "astro dev",
 		"build": "astro build",
@@ -12,6 +12,7 @@
 	},
 	"dependencies": {
 		"@astrojs/cloudflare": "^12.6.5",
+		"@scalar/api-client": "^2.5.26",
 		"astro": "^5.13.3"
 	},
 	"devDependencies": {
