@@ -14,7 +14,16 @@ const pageTitle = "Scalar API Client";
 <body>
 <div id="scalar-client" class="scalar-app scalar-client"></div>
 <script>
- import "../scripts/main.js";
+import { createApiClientApp } from '@scalar/api-client';
+// run in the browser (client side) where 'document' is defined.
+document.addEventListener("DOMContentLoaded", () => {
+
+await createApiClientApp(document.getElementById('scalar-client'), {
+  url: 'https://practice-davinci-838522938854.us-central1.run.app/docs/',
+  proxyUrl: 'https://proxy.scalar.com',
+});
+
+});
 </script>
 </body>
 </html>
