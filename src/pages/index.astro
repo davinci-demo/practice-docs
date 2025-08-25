@@ -1,5 +1,6 @@
 ---
 const pageTitle = "Scalar API Client";
+import scalarclient from '../components/scalarclient.jsx';
 
 ---
 
@@ -12,18 +13,8 @@ const pageTitle = "Scalar API Client";
 		<title>{pageTitle}</title>
 	</head>
 <body>
-<div id="scalar-client" class="scalar-app scalar-client"></div>
-<script>
-import { createApiClientApp } from '@scalar/api-client';
-// run in the browser (client side) where 'document' is defined.
-document.addEventListener("DOMContentLoaded", () => {
 
-await createApiClientApp(document.getElementById('scalar-client'), {
-  url: 'https://practice-davinci-838522938854.us-central1.run.app/docs/',
-  proxyUrl: 'https://proxy.scalar.com',
-});
+<scalarclient client:load />
 
-});
-</script>
 </body>
 </html>
