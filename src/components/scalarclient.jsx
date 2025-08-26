@@ -1,19 +1,16 @@
-import { ApiClientModalProvider } from '@scalar/api-client-react'
-import '@scalar/api-client-react/style.css';
-import { useApiClientModal } from '@scalar/api-client-react'
+import { ApiReferenceReact } from '@scalar/api-reference-react'
 
-const client = useApiClientModal()
+import '@scalar/api-reference-react/style.css'
 
-export default function scalarclient() {
+function scalarclient() {
   return (
-  <ApiClientModalProvider
-    configuration={{
-      url: 'https://practice-davinci-838522938854.us-central1.run.app/docs/',
-    }}>
-    {children}
-  </ApiClientModalProvider>
-  <button onClick={() => client?.open({path: '/auth/token', method: 'get' })}>
-  Click to open Api client
-  </button>
-)
+    <ApiReferenceReact
+      configuration={{
+        url: 'https://practice-davinci-838522938854.us-central1.run.app/docs/',
+      }}
+    />
+  )
 }
+
+export default scalarclient
+
