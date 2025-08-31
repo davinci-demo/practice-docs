@@ -4,7 +4,7 @@
  */
 {
 	"$schema": "node_modules/wrangler/config-schema.json",
-	"name": "practice-assets",
+	"name": "practice-docs",
 	"main": "worker/index.js",
 	"compatibility_date": "2025-08-31",
 	"assets": {
