@@ -10,7 +10,13 @@ function App() {
     <ApiReferenceReact
       configuration={{
         url: openapiURL,
-        baseServerURL: 'https://practice-davinci-838522938854.us-central1.run.app'
+        baseServerURL: 'https://practice-davinci-838522938854.us-central1.run.app',
+        servers: [
+          {
+            url: 'https://practice-davinci-838522938854.us-central1.run.app',
+            description: 'Development',
+          },
+        ]
       }}
     />
 
