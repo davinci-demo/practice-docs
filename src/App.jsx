@@ -9,11 +9,13 @@ function App() {
 
     <ApiReferenceReact
       configuration={{
+        persistAuth: true,
         url: openapiURL,
-        baseServerURL: 'https://practice-davinci-838522938854.us-central1.run.app',
+        proxyUrl: 'https://proxy.scalar.com',
+        baseServerURL: import.meta.env.VITE_ORIGIN_URL,
         servers: [
           {
-            url: 'https://practice-davinci-838522938854.us-central1.run.app',
+            url: import.meta.env.VITE_ORIGIN_URL,
             description: 'Development',
           },
         ]
