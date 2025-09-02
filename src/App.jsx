@@ -1,4 +1,4 @@
-import openapiURL from './assets/openapi.json?url'
+import openapiURL from '/openapi.json?url'
 import { ApiReferenceReact } from '@scalar/api-reference-react'
 import '@scalar/api-reference-react/style.css'
 
