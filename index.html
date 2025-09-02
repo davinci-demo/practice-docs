@@ -14,8 +14,17 @@
   <!-- Initialize Scalar -->
   <script>
     Scalar.createApiReference('#app', {
-      url: '%VITE_ORIGIN_URL%/docs/',
-      proxyUrl: 'https://proxy.scalar.com'
+        persistAuth: true,
+        url: './assets/openapi.json',
+        proxyUrl: 'https://proxy.scalar.com',
+        baseServerURL: '%VITE_ORIGIN_URL%',
+        servers: [
+          {
+            url: '%VITE_ORIGIN_URL%',
+            description: 'Development',
+          },
+        ]
+
     })
   </script>
 </body>
