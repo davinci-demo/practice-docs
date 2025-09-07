@@ -1,12 +1,9 @@
 import openapiURL from '/openapi.json?url'
 import { ApiReferenceReact } from '@scalar/api-reference-react'
-import '@scalar/api-reference-react/style.css'
 
 function App() {
 
   return (
-    <>
-
     <ApiReferenceReact
       configuration={{
         persistAuth: true,
@@ -22,7 +19,6 @@ function App() {
       }}
     />
 
-    </>
   )
 }
 
